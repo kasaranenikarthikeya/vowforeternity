@@ -1,0 +1,112 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset + Global Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  --primary-color: #1A1A40;   /* Dark blue/purple tone */
+  --accent-color: #ff4c60;    /* Accent pinkish-red */
+  --bg-color: #f5f5dc;        /* Beige base */
+  --text-color: #1A1A40;
+  --font-family: 'Playfair Display', serif;
+}
+
+/* Body Styles */
+body, html, #root {
+  height: 100%;
+  font-family: var(--font-family);
+  background: var(--bg-color) url("/watercolor-bg.jpg") center/cover no-repeat fixed;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+/* Section Wrapper */
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Paragraph */
+p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e33b50;
+}
+
+/* Page Sections with Overlay (optional for readability) */
+.page-section {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 60px 40px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  section { padding: 60px 16px; }
+}
